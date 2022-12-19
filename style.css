@@ -1,0 +1,186 @@
+/* Removes the bullet points from the list */ 
+ul{
+  margin:0;
+  padding:0;
+}
+
+/* Format the list items */
+ul li{
+  cursor:pointer;
+  position:relative;
+  padding:10px 8px 10px 30px;
+  background:rgba(100, 150, 220, 0.685);
+  font-size:20px;
+  transition:0.2s;
+} 
+
+/* Changes the color of the list item when hovered over */
+
+ul li:hover{
+  background:rgb(125, 175, 240);
+}
+
+
+/* Formats the checked list item */
+ul li.current{
+  background:#337;
+  color:#fff;
+}
+
+/*
+ul li.current:hover{
+  background:#777;
+  color:#111;
+}
+*/
+
+ul li.yes{
+  background:#5B5;
+  color:#141;
+}
+
+ul li.yes.current{
+  background:#373;
+  color:#fff;
+}
+
+ul li.no{
+  background:#B55;
+  color:#411;
+}
+
+ul li.no.current{
+  background:#733;
+  color:#fff;
+}
+
+
+/* Formats the header */
+.header{
+  background-color:#a7d3ecef;
+  padding:20px 30px 50px;
+  color:white;
+  text-align:left;
+}
+
+
+input{
+  font-size:22px;
+  padding:2px;
+}
+
+/* Styles the Add button */
+button{
+  padding:2px;
+  width:20vh;
+  background:#d9d9d9;
+  color:#555;
+  float:left;
+  text-align:center;
+  font-size:22px;
+  cursor:pointer;
+  transition:0.3s;
+  border-radius:0;
+}
+
+/* Changes the color when button is hovered over */
+button:hover{
+  background-color:rgb(203, 202, 204);
+}
+
+
+/* Formats the close button for each list item */
+.close{
+  position:absolute;
+  right:0;
+  top:0;
+  padding:10px 16px 10px 16px;
+}
+
+/* Changes the style of the close button when hovered over */
+.close:hover{
+  background-color:#c90a3a;
+  color:white;
+}
+
+.Y{
+  float: right;
+  padding:4px 8px 4px 8px;
+  background:#5B5;
+  color:#141;
+}
+
+.N{
+  float: right;
+  padding:4px 8px 4px 8px;
+  background:#B55;
+  color:#411;
+}
+
+.P{
+  float: right;
+  padding:4px 8px 4px 8px;
+  background:#888;
+  color:#000;
+}
+
+.C{
+  float: right;
+  padding:4px 8px 4px 8px;
+  background:rgba(100, 150, 220, 0.685);
+}
+
+.Y:hover{
+  background:#8F8;
+  color:#000;
+}
+
+.N:hover{
+  background:#F88;
+  color:#000;
+}
+
+.P:hover{
+  background:#BBB;
+  color:#000;
+}
+
+.C:hover{
+  background:rgb(150, 200, 255);
+}
+
+.numcorrect {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 10vw;
+  height: 5vh;
+  z-index: 99;
+  font-size: 3vh;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding:8px 16px 4px 16px;
+  border-radius: 1vh;
+}
+
+.numwrong {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 20vw;
+  width: 10vw;
+  height: 5vh;
+  z-index: 99;
+  font-size: 3vh;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding:8px 16px 4px 16px;
+  border-radius: 1vh;
+}
